@@ -1,0 +1,3 @@
+nohup python3 v5_aggresive.py $
+
+ps ax | grep .py

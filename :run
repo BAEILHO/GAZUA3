@@ -1,0 +1,5 @@
+rm -rf ./nohup.out
+rm -rf ./aggresive_*
+kill_arg=`ps ax | grep v6.py | awk '{print $1}'`
+kill ${kill_arg}
+nohup python3 v6.py &

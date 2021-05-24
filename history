@@ -1,0 +1,107 @@
+    1  phython3
+    2  python3
+    3  git clone https://github.com/lsj4401/fibertron-view.git
+    4  ls
+    5  cd 
+    6  pwd
+    7  cd fibertron-view/
+    8  mv v5_aggresive.py ../
+    9  ls
+   10  rm -rf *
+   11  ls
+   12  cd ..
+   13  ls
+   14  rm -rf fibertron-view
+   15  mkdir GAZUA
+   16  ls
+   17  mv v5_aggresive.py GAZUA/
+   18  cd GAZUA/
+   19  ls -rtl
+   20  ls
+   21  cd ..
+   22  rm GAZUA -rf
+   23  ls
+   24  history
+   25  git clone https://github.com/lsj4401/fibertron-view.git
+   26  ls
+   27  mv fibertron-view/v5_aggresive.py .
+   28  ls
+   29  rm fibertron-view -rf
+   30  ls
+   31  mkdir GAZUA
+   32  mv v5_aggresive.py GAZUA/
+   33  cd GAZUA/
+   34  ls -rtl
+   35  vi v5_aggresive.py 
+   36  ls
+   37  sudo apt update
+   38  sudo apt install python3-pip
+   39  pip3 install pyupbit
+   40  ls
+   41  pwd
+   42  python3 v5_aggresive.py 
+   43  ps
+   44  ls -rtl
+   45  vi aggresive_2021_05_16_04_56_log.txt 
+   46  ls
+   47  mkdir readme
+   48  ls
+   49  rm readme -rf
+   50  vi readme
+   51  ls -rtl
+   52  cd ..
+   53  ls
+   54  cd 
+   55  ls
+   56  cd GAZUA/
+   57  ls
+   58  ls -rtl
+   59  ls
+   60  vi readme
+   61  ls -rtl
+   62  chmod 777 readme
+   63  ls
+   64  mv readme run
+   65  ls
+   66  mv run :run
+   67  ls -rtl
+   68  vi readme
+   69  ls -rtl
+   70  vi :readme 
+   71  ls -rtl
+   72  vi :run
+   73  ls
+   74  ./:ru
+   75  ./:run
+   76  ps as | grep .py
+   77  ls -rtl
+   78  vi aggresive_2021_05_16_05_02_log.txt 
+   79  ls
+   80  ls -rtl
+   81  ps ax | grep .py
+   82  ls -rtl
+   83  cd 
+   84  cd GAZUA/
+   85  ls -rtl
+   86  ps ax | grep .py
+   87  ls
+   88  cd 
+   89  ls
+   90  cd GAZUA/
+   91  ls
+   92  ls -rtl
+   93  vi aggresive_2021_05_16_05_02_log.txt 
+   94  ls -rtl
+   95  vi aggresive_2021_05_16_05_02_log.txt 
+   96  vi v5_aggresive.py 
+   97  ls -rtl
+   98  vi aggresive_2021_05_16_05_02_log.txt 
+   99  ls
+  100  cp v5_aggresive.py test1.py
+  101  vi test1.py 
+  102  phython3 test1.py 
+  103  ps
+  104  history
+  105  history > aaa
+  106  vi aaa
+  107  history > history
