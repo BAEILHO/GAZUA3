@@ -1,0 +1,9 @@
+git config --global user.email "09jasuk@naver.com"
+git config --global user.name "ILHOBAE"
+cd GAZUA
+git init
+git status
+git add *
+git commit -m "v2"
+git remote add origin "https://github.com/BAEILHO/GAZUA3.git"
+git push origin master
