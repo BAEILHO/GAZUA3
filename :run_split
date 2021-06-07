@@ -1,8 +1,10 @@
 kill_arg=`ps ax | grep v8_ | awk '{print $1}'`
 kill ${kill_arg}
-rm -rf ./log/v8_BTC.txt
+rm -rf ./log/v8_BTC1.txt
+rm -rf ./log/v8_BTC2.txt
 rm -rf ./log/v8_KRW1.txt
 rm -rf ./log/v8_KRW2.txt
-nohup python3 v8_BTC.py > nohup_BTC.out &
+nohup python3 v8_BTC1.py > nohup_BTC1.out &
+nohup python3 v8_BTC2.py > nohup_BTC2.out &
 nohup python3 v8_KRW1.py > nohup_KRW1.out &
 nohup python3 v8_KRW2.py > nohup_KRW2.out &

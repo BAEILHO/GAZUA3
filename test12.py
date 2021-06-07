@@ -32,7 +32,7 @@ logger.addHandler(stream_handler)
 
 # log를 파일에 출력
 #file_handler = logging.FileHandler(f"aggresive_{c_time_log}_log.txt")
-file_handler = logging.FileHandler(filename='./log/v6_log.txt')
+file_handler = logging.FileHandler(filename='./log/v8_log.txt')
 file_handler.setFormatter(formatter)
 logger.addHandler(file_handler)
 
@@ -50,28 +50,18 @@ init_balance = upbit.get_balance(ticker="KRW")
 
 logger.info("START!!   init balance : %d", init_balance)
 
-
+ticker_type = "KRW"
 
 tickers = ['KRW-ETH', 'KRW-NEO', 'KRW-MTL', 'KRW-LTC', 'KRW-XRP', 'KRW-ETC', 'KRW-OMG', 'KRW-SNT', 'KRW-WAVES', 'KRW-XEM', 'KRW-QTUM', 'KRW-LSK', 'KRW-STEEM', 'KRW-XLM', 'KRW-ARDR', 'KRW-KMD', 'KRW-ARK', 'KRW-STORJ', 'KRW-GRS', 'KRW-REP', 'KRW-EMC2', 'KRW-ADA', 'KRW-SBD', 'KRW-POWR', 'KRW-BTG', 'KRW-ICX', 'KRW-EOS', 'KRW-TRX', 'KRW-SC', 'KRW-IGNIS', 'KRW-ONT', 'KRW-ZIL', 'KRW-POLY', 'KRW-ZRX', 'KRW-LOOM', 'KRW-BCH', 'KRW-ADX', 'KRW-BAT', 'KRW-IOST', 'KRW-DMT', 'KRW-RFR', 'KRW-CVC', 'KRW-IQ', 'KRW-IOTA', 'KRW-MFT', 'KRW-ONG', 'KRW-GAS', 'KRW-UPP', 'KRW-ELF', 'KRW-KNC', 'KRW-BSV', 'KRW-THETA', 'KRW-EDR', 'KRW-QKC', 'KRW-BTT', 'KRW-MOC', 'KRW-ENJ', 'KRW-TFUEL', 'KRW-MANA', 'KRW-ANKR', 'KRW-AERGO', 'KRW-ATOM', 'KRW-TT']
 #tickers = ['KRW-CRE', 'KRW-SOLVE', 'KRW-MBL', 'KRW-TSHP', 'KRW-WAXP', 'KRW-HBAR', 'KRW-MED', 'KRW-MLK', 'KRW-STPT', 'KRW-ORBS', 'KRW-VET', 'KRW-CHZ', 'KRW-PXL', 'KRW-STMX', 'KRW-DKA', 'KRW-HIVE', 'KRW-KAVA', 'KRW-AHT', 'KRW-LINK', 'KRW-XTZ', 'KRW-BORA', 'KRW-JST', 'KRW-CRO', 'KRW-TON', 'KRW-SXP', 'KRW-LAMB', 'KRW-HUNT', 'KRW-MARO', 'KRW-PLA', 'KRW-DOT', 'KRW-SRM', 'KRW-MVL', 'KRW-PCI', 'KRW-STRAX', 'KRW-AQT', 'KRW-BCHA', 'KRW-GLM', 'KRW-QTCON', 'KRW-SSX', 'KRW-META', 'KRW-OBSR', 'KRW-FCT2', 'KRW-LBC', 'KRW-CBK', 'KRW-SAND', 'KRW-HUM', 'KRW-DOGE', 'KRW-STRK', 'KRW-PUNDIX', 'KRW-FLOW', 'KRW-DAWN', 'KRW-AXS', 'KRW-STX']
 
-#tickers = pyupbit.get_tickers(fiat="ALL")
 
-bought_list = {}
-sell_order_list = []
-sell_list = {}
-
-
-
-
-
-
-
-
-
-ticker="KRW-CRE"
-order_list = upbit.get_order(ticker)
-order_list_cnt = len(order_list)
-print(order_list)
-
-print(order_list)
+ticker = "KRW-ETC"
+tickers = pyupbit.get_tickers(fiat="BTC")
+print(tickers)
+#while True:
+#    unit = pyupbit.get_current_price(f"{ticker}")
+#    df = pyupbit.get_ohlcv(f"{ticker}", interval="minute1", count=2)
+#    volume = df['volume'].iloc[1]
+#    print(unit, volume)
+#    time.sleep(0.1)

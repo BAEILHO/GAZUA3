@@ -32,7 +32,7 @@ logger.addHandler(stream_handler)
 
 # log를 파일에 출력
 #file_handler = logging.FileHandler(f"aggresive_{c_time_log}_log.txt")
-file_handler = logging.FileHandler(filename='./log/v8_KRW1.txt')
+file_handler = logging.FileHandler(filename='./log/v8_BTC2.txt')
 file_handler.setFormatter(formatter)
 logger.addHandler(file_handler)
 
@@ -50,13 +50,16 @@ init_balance = upbit.get_balance(ticker="KRW")
 
 logger.info("START!!   init balance : %d", init_balance)
 
-ticker_type = "KRW"
+ticker_type = "BTC"
 
-tickers = ['KRW-ETH', 'KRW-NEO', 'KRW-MTL', 'KRW-LTC', 'KRW-XRP', 'KRW-ETC', 'KRW-OMG', 'KRW-SNT', 'KRW-WAVES', 'KRW-XEM', 'KRW-QTUM', 'KRW-LSK', 'KRW-STEEM', 'KRW-XLM', 'KRW-ARDR', 'KRW-KMD', 'KRW-ARK', 'KRW-STORJ', 'KRW-GRS', 'KRW-REP', 'KRW-EMC2', 'KRW-ADA', 'KRW-SBD', 'KRW-POWR', 'KRW-BTG', 'KRW-ICX', 'KRW-EOS', 'KRW-TRX', 'KRW-SC', 'KRW-IGNIS', 'KRW-ONT', 'KRW-ZIL', 'KRW-POLY', 'KRW-ZRX', 'KRW-LOOM', 'KRW-BCH', 'KRW-ADX', 'KRW-BAT', 'KRW-IOST', 'KRW-DMT', 'KRW-RFR', 'KRW-CVC', 'KRW-IQ', 'KRW-IOTA', 'KRW-MFT', 'KRW-ONG', 'KRW-GAS', 'KRW-UPP', 'KRW-ELF', 'KRW-KNC', 'KRW-BSV', 'KRW-THETA', 'KRW-EDR', 'KRW-QKC', 'KRW-BTT', 'KRW-MOC', 'KRW-ENJ', 'KRW-TFUEL', 'KRW-MANA', 'KRW-ANKR', 'KRW-AERGO', 'KRW-ATOM', 'KRW-TT']
+#tickers = ['KRW-ETH', 'KRW-NEO', 'KRW-MTL', 'KRW-LTC', 'KRW-XRP', 'KRW-ETC', 'KRW-OMG', 'KRW-SNT', 'KRW-WAVES', 'KRW-XEM', 'KRW-QTUM', 'KRW-LSK', 'KRW-STEEM', 'KRW-XLM', 'KRW-ARDR', 'KRW-KMD', 'KRW-ARK', 'KRW-STORJ', 'KRW-GRS', 'KRW-REP', 'KRW-EMC2', 'KRW-ADA', 'KRW-SBD', 'KRW-POWR', 'KRW-BTG', 'KRW-ICX', 'KRW-EOS', 'KRW-TRX', 'KRW-SC', 'KRW-IGNIS', 'KRW-ONT', 'KRW-ZIL', 'KRW-POLY', 'KRW-ZRX', 'KRW-LOOM', 'KRW-BCH', 'KRW-ADX', 'KRW-BAT', 'KRW-IOST', 'KRW-DMT', 'KRW-RFR', 'KRW-CVC', 'KRW-IQ', 'KRW-IOTA', 'KRW-MFT', 'KRW-ONG', 'KRW-GAS', 'KRW-UPP', 'KRW-ELF', 'KRW-KNC', 'KRW-BSV', 'KRW-THETA', 'KRW-EDR', 'KRW-QKC', 'KRW-BTT', 'KRW-MOC', 'KRW-ENJ', 'KRW-TFUEL', 'KRW-MANA', 'KRW-ANKR', 'KRW-AERGO', 'KRW-ATOM', 'KRW-TT']
 #tickers = ['KRW-CRE', 'KRW-SOLVE', 'KRW-MBL', 'KRW-TSHP', 'KRW-WAXP', 'KRW-HBAR', 'KRW-MED', 'KRW-MLK', 'KRW-STPT', 'KRW-ORBS', 'KRW-VET', 'KRW-CHZ', 'KRW-PXL', 'KRW-STMX', 'KRW-DKA', 'KRW-HIVE', 'KRW-KAVA', 'KRW-AHT', 'KRW-LINK', 'KRW-XTZ', 'KRW-BORA', 'KRW-JST', 'KRW-CRO', 'KRW-TON', 'KRW-SXP', 'KRW-LAMB', 'KRW-HUNT', 'KRW-MARO', 'KRW-PLA', 'KRW-DOT', 'KRW-SRM', 'KRW-MVL', 'KRW-PCI', 'KRW-STRAX', 'KRW-AQT', 'KRW-BCHA', 'KRW-GLM', 'KRW-QTCON', 'KRW-SSX', 'KRW-META', 'KRW-OBSR', 'KRW-FCT2', 'KRW-LBC', 'KRW-CBK', 'KRW-SAND', 'KRW-HUM', 'KRW-DOGE', 'KRW-STRK', 'KRW-PUNDIX', 'KRW-FLOW', 'KRW-DAWN', 'KRW-AXS', 'KRW-STX']
 
-if (ticker_type == "BTC"):
-    tickers = pyupbit.get_tickers(fiat="BTC")
+
+
+#tickers = ['BTC-ETH', 'BTC-LTC', 'BTC-XRP', 'BTC-ETC', 'BTC-OMG', 'BTC-CVC', 'BTC-DGB', 'BTC-SC', 'BTC-SNT', 'BTC-WAVES', 'BTC-NMR', 'BTC-XEM', 'BTC-LBC', 'BTC-QTUM', 'BTC-NXT', 'BTC-BAT', 'BTC-LSK', 'BTC-RDD', 'BTC-STEEM', 'BTC-DOGE', 'BTC-BNT', 'BTC-XLM', 'BTC-ARDR', 'BTC-KMD', 'BTC-ARK', 'BTC-ADX', 'BTC-SYS', 'BTC-ANT', 'BTC-STORJ', 'BTC-GRS', 'BTC-REP', 'BTC-RLC', 'BTC-EMC2', 'BTC-ADA', 'BTC-MANA', 'BTC-SBD', 'BTC-RCN', 'BTC-POWR', 'BTC-DNT', 'BTC-IGNIS', 'BTC-ZRX', 'BTC-TRX', 'BTC-TUSD', 'BTC-LRC', 'BTC-DMT', 'BTC-POLY', 'BTC-PRO', 'BTC-BCH', 'BTC-MFT', 'BTC-LOOM', 'BTC-RFR', 'BTC-RVN', 'BTC-BFT', 'BTC-GO', 'BTC-UPP', 'BTC-ENJ', 'BTC-EDR', 'BTC-MTL', 'BTC-PAX', 'BTC-MOC', 'BTC-ZIL', 'BTC-BSV', 'BTC-IOST', 'BTC-NCASH', 'BTC-DENT', 'BTC-ELF', 'BTC-BTT', 'BTC-VITE', 'BTC-IOTX', 'BTC-SOLVE', 'BTC-NKN', 'BTC-META', 'BTC-ANKR', 'BTC-CRO', 'BTC-FSN', 'BTC-ORBS', 'BTC-AERGO', 'BTC-PI']
+tickers = ['BTC-ATOM', 'BTC-STPT', 'BTC-LAMB', 'BTC-EOS', 'BTC-LUNA', 'BTC-DAI', 'BTC-MKR', 'BTC-BORA', 'BTC-TSHP', 'BTC-WAXP', 'BTC-MED', 'BTC-MLK', 'BTC-PXL', 'BTC-VET', 'BTC-CHZ', 'BTC-FX', 'BTC-OGN', 'BTC-ITAM', 'BTC-XTZ', 'BTC-HIVE', 'BTC-HBD', 'BTC-OBSR', 'BTC-DKA', 'BTC-STMX', 'BTC-AHT', 'BTC-PCI', 'BTC-RINGX', 'BTC-LINK', 'BTC-KAVA', 'BTC-JST', 'BTC-CHR', 'BTC-DAD', 'BTC-TON', 'BTC-CTSI', 'BTC-DOT', 'BTC-COMP', 'BTC-SXP', 'BTC-HUNT', 'BTC-ONIT', 'BTC-CRV', 'BTC-ALGO', 'BTC-RSR', 'BTC-OXT', 'BTC-PLA', 'BTC-MARO', 'BTC-SAND', 'BTC-SUN', 'BTC-SRM', 'BTC-QTCON', 'BTC-MVL', 'BTC-GXC', 'BTC-AQT', 'BTC-AXS', 'BTC-STRAX', 'BTC-BCHA', 'BTC-GLM', 'BTC-FCT2', 'BTC-SSX', 'BTC-FIL', 'BTC-UNI', 'BTC-BASIC', 'BTC-INJ', 'BTC-PROM', 'BTC-VAL', 'BTC-PSG', 'BTC-JUV', 'BTC-CBK', 'BTC-FOR', 'BTC-BFC', 'BTC-LINA', 'BTC-HUM', 'BTC-PICA', 'BTC-CELO', 'BTC-IQ', 'BTC-STX', 'BTC-NEAR', 'BTC-AUCTION', 'BTC-DAWN', 'BTC-FLOW', 'BTC-STRK', 'BTC-PUNDIX', 'BTC-GRT', 'BTC-SNX']
+
 
 bought_list = {}
 sell_order_list = []
@@ -133,9 +136,9 @@ def check_volume_validity(ticker, volume_list):
             abc = 0
         cnt = cnt + 1
     #logger.info("avg_volume : %d   new_volume_1/avg_volume : %0.3f   new_volume_2/avg_volume : %0.3f", avg_volume, new_volume_1/avg_volume, new_volume_2/avg_volume)
-    if (new_volume_1/avg_volume >= 1.5) and (new_volume_2/avg_volume >= 2):
+    if (new_volume_1/avg_volume >= 2) and (new_volume_2/avg_volume >= 2.2):
         return "valid"
-    elif (new_volume_2/avg_volume >= 3) and (ticker_type == "KRW"):
+    elif (new_volume_2/avg_volume >= 5) and (ticker_type == "KRW"):
         return "valid"
     else:
         return "invaild"
@@ -313,12 +316,6 @@ while_cnt = 0
 
 
 
-
-
-
-
-
-
 while True:
     logger.info("while")
     if (status == "bought"):
@@ -456,4 +453,3 @@ while True:
         else:
             logger.info("Error1")
 
-            

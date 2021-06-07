@@ -32,7 +32,7 @@ logger.addHandler(stream_handler)
 
 # log를 파일에 출력
 #file_handler = logging.FileHandler(f"aggresive_{c_time_log}_log.txt")
-file_handler = logging.FileHandler(filename='./log/v8_KRW1.txt')
+file_handler = logging.FileHandler(filename='./log/v9_KRW2.txt')
 file_handler.setFormatter(formatter)
 logger.addHandler(file_handler)
 
@@ -52,8 +52,8 @@ logger.info("START!!   init balance : %d", init_balance)
 
 ticker_type = "KRW"
 
-tickers = ['KRW-ETH', 'KRW-NEO', 'KRW-MTL', 'KRW-LTC', 'KRW-XRP', 'KRW-ETC', 'KRW-OMG', 'KRW-SNT', 'KRW-WAVES', 'KRW-XEM', 'KRW-QTUM', 'KRW-LSK', 'KRW-STEEM', 'KRW-XLM', 'KRW-ARDR', 'KRW-KMD', 'KRW-ARK', 'KRW-STORJ', 'KRW-GRS', 'KRW-REP', 'KRW-EMC2', 'KRW-ADA', 'KRW-SBD', 'KRW-POWR', 'KRW-BTG', 'KRW-ICX', 'KRW-EOS', 'KRW-TRX', 'KRW-SC', 'KRW-IGNIS', 'KRW-ONT', 'KRW-ZIL', 'KRW-POLY', 'KRW-ZRX', 'KRW-LOOM', 'KRW-BCH', 'KRW-ADX', 'KRW-BAT', 'KRW-IOST', 'KRW-DMT', 'KRW-RFR', 'KRW-CVC', 'KRW-IQ', 'KRW-IOTA', 'KRW-MFT', 'KRW-ONG', 'KRW-GAS', 'KRW-UPP', 'KRW-ELF', 'KRW-KNC', 'KRW-BSV', 'KRW-THETA', 'KRW-EDR', 'KRW-QKC', 'KRW-BTT', 'KRW-MOC', 'KRW-ENJ', 'KRW-TFUEL', 'KRW-MANA', 'KRW-ANKR', 'KRW-AERGO', 'KRW-ATOM', 'KRW-TT']
-#tickers = ['KRW-CRE', 'KRW-SOLVE', 'KRW-MBL', 'KRW-TSHP', 'KRW-WAXP', 'KRW-HBAR', 'KRW-MED', 'KRW-MLK', 'KRW-STPT', 'KRW-ORBS', 'KRW-VET', 'KRW-CHZ', 'KRW-PXL', 'KRW-STMX', 'KRW-DKA', 'KRW-HIVE', 'KRW-KAVA', 'KRW-AHT', 'KRW-LINK', 'KRW-XTZ', 'KRW-BORA', 'KRW-JST', 'KRW-CRO', 'KRW-TON', 'KRW-SXP', 'KRW-LAMB', 'KRW-HUNT', 'KRW-MARO', 'KRW-PLA', 'KRW-DOT', 'KRW-SRM', 'KRW-MVL', 'KRW-PCI', 'KRW-STRAX', 'KRW-AQT', 'KRW-BCHA', 'KRW-GLM', 'KRW-QTCON', 'KRW-SSX', 'KRW-META', 'KRW-OBSR', 'KRW-FCT2', 'KRW-LBC', 'KRW-CBK', 'KRW-SAND', 'KRW-HUM', 'KRW-DOGE', 'KRW-STRK', 'KRW-PUNDIX', 'KRW-FLOW', 'KRW-DAWN', 'KRW-AXS', 'KRW-STX']
+#tickers = ['KRW-ETH', 'KRW-NEO', 'KRW-MTL', 'KRW-LTC', 'KRW-XRP', 'KRW-ETC', 'KRW-OMG', 'KRW-SNT', 'KRW-WAVES', 'KRW-XEM', 'KRW-QTUM', 'KRW-LSK', 'KRW-STEEM', 'KRW-XLM', 'KRW-ARDR', 'KRW-KMD', 'KRW-ARK', 'KRW-STORJ', 'KRW-GRS', 'KRW-REP', 'KRW-EMC2', 'KRW-ADA', 'KRW-SBD', 'KRW-POWR', 'KRW-BTG', 'KRW-ICX', 'KRW-EOS', 'KRW-TRX', 'KRW-SC', 'KRW-IGNIS', 'KRW-ONT', 'KRW-ZIL', 'KRW-POLY', 'KRW-ZRX', 'KRW-LOOM', 'KRW-BCH', 'KRW-ADX', 'KRW-BAT', 'KRW-IOST', 'KRW-DMT', 'KRW-RFR', 'KRW-CVC', 'KRW-IQ', 'KRW-IOTA', 'KRW-MFT', 'KRW-ONG', 'KRW-GAS', 'KRW-UPP', 'KRW-ELF', 'KRW-KNC', 'KRW-BSV', 'KRW-THETA', 'KRW-EDR', 'KRW-QKC', 'KRW-BTT', 'KRW-MOC', 'KRW-ENJ', 'KRW-TFUEL', 'KRW-MANA', 'KRW-ANKR', 'KRW-AERGO', 'KRW-ATOM', 'KRW-TT']
+tickers = ['KRW-CRE', 'KRW-SOLVE', 'KRW-MBL', 'KRW-TSHP', 'KRW-WAXP', 'KRW-HBAR', 'KRW-MED', 'KRW-MLK', 'KRW-STPT', 'KRW-ORBS', 'KRW-VET', 'KRW-CHZ', 'KRW-PXL', 'KRW-STMX', 'KRW-DKA', 'KRW-HIVE', 'KRW-KAVA', 'KRW-AHT', 'KRW-LINK', 'KRW-XTZ', 'KRW-BORA', 'KRW-JST', 'KRW-CRO', 'KRW-TON', 'KRW-SXP', 'KRW-LAMB', 'KRW-HUNT', 'KRW-MARO', 'KRW-PLA', 'KRW-DOT', 'KRW-SRM', 'KRW-MVL', 'KRW-PCI', 'KRW-STRAX', 'KRW-AQT', 'KRW-BCHA', 'KRW-GLM', 'KRW-QTCON', 'KRW-SSX', 'KRW-META', 'KRW-OBSR', 'KRW-FCT2', 'KRW-LBC', 'KRW-CBK', 'KRW-SAND', 'KRW-HUM', 'KRW-DOGE', 'KRW-STRK', 'KRW-PUNDIX', 'KRW-FLOW', 'KRW-DAWN', 'KRW-AXS', 'KRW-STX']
 
 if (ticker_type == "BTC"):
     tickers = pyupbit.get_tickers(fiat="BTC")
@@ -62,13 +62,16 @@ bought_list = {}
 sell_order_list = []
 sell_list = {}
 
-def check_rate_validity(ticker, close_list):
+def check_rate_validity(ticker, avg_list):
     cnt = 0
     total_rate = 0
+    global avg_rate
+    global new_rate_1
+    global new_rate_2
     avg_rate = 0
     new_rate_1 = 0
     new_rate_2 = 0
-    for rate in close_list:
+    for rate in avg_list:
         if (cnt < 8):
             total_rate = total_rate + rate
             if (cnt == 7):
@@ -80,13 +83,14 @@ def check_rate_validity(ticker, close_list):
         else:
             abc = 0
         cnt = cnt + 1
-    #logger.info("avg_rate : %0.6f   new_rate_1/avg_rate : %0.6f    new_rate_2/avg_rate : %0.6f", avg_rate, new_rate_1/avg_rate, new_rate_2/avg_rate)
-    if (new_rate_1/avg_rate >= 1.02) and (new_rate_2/avg_rate >= 1.04) and (new_rate_1/avg_rate < 1.1) and (new_rate_2/avg_rate < 1.1):
+    if (new_rate_1/avg_rate >= 1.01) and (new_rate_2/avg_rate >= 1.02) and (new_rate_1/avg_rate < 1.1) and (new_rate_2/avg_rate < 1.1):
+        #logger.info("avg_rate : %0.6f   new_rate_1/avg_rate : %0.6f    new_rate_2/avg_rate : %0.6f", avg_rate, new_rate_1/avg_rate, new_rate_2/avg_rate)
         return "valid"
-    elif (new_rate_2/avg_rate >= 1.05) and (new_rate_2/avg_rate < 1.3) and (ticker_type == "KRW"):
+    elif (new_rate_2/avg_rate >= 1.02) and (new_rate_2/avg_rate < 1.1) and (ticker_type == "KRW"):
+        #logger.info("avg_rate : %0.6f   new_rate_1/avg_rate : %0.6f    new_rate_2/avg_rate : %0.6f", avg_rate, new_rate_1/avg_rate, new_rate_2/avg_rate)
         return "valid"
     else:
-        return "invaild"
+        return "invalid"
 
 
 
@@ -104,11 +108,11 @@ def check_rate15_validity(ticker):
     for old_value, new_value in zip(list_from_old, list_from_new):
         value = new_value / old_value - 1
         total_rate = total_rate + value
-        #logger.info("total_rate : %0.4f", total_rate)
-    if (total_rate >= 0.25):
+        logger.info("total_rate : %0.4f", total_rate)
+    if (total_rate >= 0.15):
         return "valid"
     else:
-        return "vaild"
+        return "valid"
 
 
 
@@ -117,6 +121,9 @@ def check_rate15_validity(ticker):
 def check_volume_validity(ticker, volume_list):
     cnt = 0
     total_volume = 0
+    global avg_volume
+    global new_volume_1
+    global new_volume_2
     avg_volume = 0
     new_volume_1 = 0
     new_volume_2 = 0
@@ -132,13 +139,14 @@ def check_volume_validity(ticker, volume_list):
         else:
             abc = 0
         cnt = cnt + 1
-    #logger.info("avg_volume : %d   new_volume_1/avg_volume : %0.3f   new_volume_2/avg_volume : %0.3f", avg_volume, new_volume_1/avg_volume, new_volume_2/avg_volume)
-    if (new_volume_1/avg_volume >= 1.5) and (new_volume_2/avg_volume >= 2):
+    if (new_volume_1/avg_volume >= 2) and (new_volume_2/avg_volume >= 2.2):
+        #logger.info("avg_volume : %d   new_volume_1/avg_volume : %0.3f   new_volume_2/avg_volume : %0.3f", avg_volume, new_volume_1/avg_volume, new_volume_2/avg_volume)
         return "valid"
-    elif (new_volume_2/avg_volume >= 3) and (ticker_type == "KRW"):
+    elif (new_volume_2/avg_volume >= 5) and (ticker_type == "KRW"):
+        #logger.info("avg_volume : %d   new_volume_1/avg_volume : %0.3f   new_volume_2/avg_volume : %0.3f", avg_volume, new_volume_1/avg_volume, new_volume_2/avg_volume)
         return "valid"
     else:
-        return "invaild"
+        return "invalid"
     
 
 
@@ -190,40 +198,10 @@ def sell(ticker):
     logger.info("sell  ticker : %s", ticker)
     sell_order_list = []
     sell_balance_tmp = upbit.get_balance(ticker=f"{ticker}")
-    sell_balance = sell_balance_tmp * 0.095
+    sell_balance = sell_balance_tmp * 0.099
     sell_price_tmp = pyupbit.get_current_price(f"{ticker}")
-    sell_price = buy_price * 1.03
-    str = ticker
-    if (str.startswith('KRW-')):
-        new_price = cal_unit(sell_price)
-    else:
-        new_price = sell_price//1
-    tmp = upbit.sell_limit_order(f"{ticker}", new_price, sell_balance)
-    if 'uuid' in tmp:
-        sell_order_list.append(tmp['uuid'])
-        logger.info("ticker : %s   sell_limit_order : %d", ticker, new_price)
-    time.sleep(1)
-    sell_price = buy_price * 1.05
-    if (str.startswith('KRW-')):
-        new_price = cal_unit(sell_price)
-    else:
-        new_price = sell_price//1
-    tmp = upbit.sell_limit_order(f"{ticker}", new_price, sell_balance)
-    if 'uuid' in tmp:
-        sell_order_list.append(tmp['uuid'])
-        logger.info("ticker : %s   sell_limit_order : %d", ticker, new_price)
-    time.sleep(1)
-    sell_price = buy_price * 1.07
-    if (str.startswith('KRW-')):
-        new_price = cal_unit(sell_price)
-    else:
-        new_price = sell_price//1
-    tmp = upbit.sell_limit_order(f"{ticker}", new_price, sell_balance)
-    if 'uuid' in tmp:
-        sell_order_list.append(tmp['uuid'])
-        logger.info("ticker : %s   sell_limit_order : %d", ticker, new_price)
-    time.sleep(1)
     sell_price = buy_price * 1.1
+    str = ticker
     if (str.startswith('KRW-')):
         new_price = cal_unit(sell_price)
     else:
@@ -243,27 +221,7 @@ def sell(ticker):
         sell_order_list.append(tmp['uuid'])
         logger.info("ticker : %s   sell_limit_order : %d", ticker, new_price)
     time.sleep(1)
-    sell_price = buy_price * 1.3
-    if (str.startswith('KRW-')):
-        new_price = cal_unit(sell_price)
-    else:
-        new_price = sell_price//1
-    tmp = upbit.sell_limit_order(f"{ticker}", new_price, sell_balance)
-    if 'uuid' in tmp:
-        sell_order_list.append(tmp['uuid'])
-        logger.info("ticker : %s   sell_limit_order : %d", ticker, new_price)
-    time.sleep(1)
     sell_price = buy_price * 1.5
-    if (str.startswith('KRW-')):
-        new_price = cal_unit(sell_price)
-    else:
-        new_price = sell_price//1
-    tmp = upbit.sell_limit_order(f"{ticker}", new_price, sell_balance)
-    if 'uuid' in tmp:
-        sell_order_list.append(tmp['uuid'])
-        logger.info("ticker : %s   sell_limit_order : %d", ticker, new_price)
-    time.sleep(1)
-    sell_price = buy_price * 1.7
     if (str.startswith('KRW-')):
         new_price = cal_unit(sell_price)
     else:
@@ -284,6 +242,56 @@ def sell(ticker):
         logger.info("ticker : %s   sell_limit_order : %d", ticker, new_price)
     time.sleep(1)
     sell_price = buy_price * 2
+    if (str.startswith('KRW-')):
+        new_price = cal_unit(sell_price)
+    else:
+        new_price = sell_price//1
+    tmp = upbit.sell_limit_order(f"{ticker}", new_price, sell_balance)
+    if 'uuid' in tmp:
+        sell_order_list.append(tmp['uuid'])
+        logger.info("ticker : %s   sell_limit_order : %d", ticker, new_price)
+    time.sleep(1)
+    sell_price = buy_price * 2.3
+    if (str.startswith('KRW-')):
+        new_price = cal_unit(sell_price)
+    else:
+        new_price = sell_price//1
+    tmp = upbit.sell_limit_order(f"{ticker}", new_price, sell_balance)
+    if 'uuid' in tmp:
+        sell_order_list.append(tmp['uuid'])
+        logger.info("ticker : %s   sell_limit_order : %d", ticker, new_price)
+    time.sleep(1)
+    sell_price = buy_price * 2.5
+    if (str.startswith('KRW-')):
+        new_price = cal_unit(sell_price)
+    else:
+        new_price = sell_price//1
+    tmp = upbit.sell_limit_order(f"{ticker}", new_price, sell_balance)
+    if 'uuid' in tmp:
+        sell_order_list.append(tmp['uuid'])
+        logger.info("ticker : %s   sell_limit_order : %d", ticker, new_price)
+    time.sleep(1)
+    sell_price = buy_price * 2.7
+    if (str.startswith('KRW-')):
+        new_price = cal_unit(sell_price)
+    else:
+        new_price = sell_price//1
+    tmp = upbit.sell_limit_order(f"{ticker}", new_price, sell_balance)
+    if 'uuid' in tmp:
+        sell_order_list.append(tmp['uuid'])
+        logger.info("ticker : %s   sell_limit_order : %d", ticker, new_price)
+    time.sleep(1)
+    sell_price = buy_price * 3
+    if (str.startswith('KRW-')):
+        new_price = cal_unit(sell_price)
+    else:
+        new_price = sell_price//1
+    tmp = upbit.sell_limit_order(f"{ticker}", new_price, sell_balance)
+    if 'uuid' in tmp:
+        sell_order_list.append(tmp['uuid'])
+        logger.info("ticker : %s   sell_limit_order : %d", ticker, new_price)
+    time.sleep(1)
+    sell_price = buy_price * 4
     if (str.startswith('KRW-')):
         new_price = cal_unit(sell_price)
     else:
@@ -314,11 +322,6 @@ while_cnt = 0
 
 
 
-
-
-
-
-
 while True:
     logger.info("while")
     if (status == "bought"):
@@ -343,9 +346,11 @@ while True:
         for ticker in tickers:
             df = pyupbit.get_ohlcv(f"{ticker}", interval="minute1", count=11)
             high_list = df['high'][0:10]
+            low_list = df['low'][0:10]
             open_list = df['open'][0:10]
             close_list = df['close'][0:10]
             volume_list = df['volume'][0:10]
+            avg_list = (high_list + low_list) / 2
             dead_validity = check_deadcoin(ticker, open_list, close_list, high_list)
             unit_validity = check_unit(ticker)
             if (dead_validity == "dead"):
@@ -355,7 +360,7 @@ while True:
                 if (unit_validity == "small"):
                     #logger.info("%s is small", ticker)
                     continue
-            rate_validity = check_rate_validity(ticker, close_list)    
+            rate_validity = check_rate_validity(ticker, avg_list)    
             volume_validity = check_volume_validity(ticker, volume_list)
             time.sleep(0.1)
             #logger.info("ticker : %s   rate_validity : %s  volume_validity : %s", ticker, rate_validity, volume_validity)
@@ -364,40 +369,46 @@ while True:
                 break
         if (target_ticker != 0):
             logger.info("target_ticker %s is found.", target_ticker)
-            #rate15_validity = check_rate15_validity(target_ticker)
-            #if (rate15_validity == "valid"):
-            #logger.info("rate15_validity is valid")
-            str = target_ticker
-            if (str.startswith('KRW-')):
-                buy_price = pyupbit.get_current_price(f"{target_ticker}")
-                buy_balance = upbit.get_balance(ticker="KRW")
-                upbit.buy_market_order(f"{target_ticker}", buy_balance * 0.7)
-            elif (str.startswith('BTC-')):
-                buy_price = pyupbit.get_current_price(f"{target_ticker}")
-                buy_balance = upbit.get_balance(ticker="KRW-BTC")
-                upbit.buy_market_order(f"{target_ticker}", buy_balance * 0.990)
-            bought_list[target_ticker] = buy_price
-            status="bought"
-            logger.info("buy : %d  ticker : %s", buy_balance, target_ticker)
-            while_abort_cnt =0
-            time.sleep(3)
-            target_balance = upbit.get_balance(ticker=f"{target_ticker}")
-            while True:
-                check_price = pyupbit.get_current_price(f"{target_ticker}")
-                if (buy_price > check_price):
-                    logger.info("buy_price %0.8f > check_price %0.8f", buy_price, check_price)
-                    logger.info("stop_loss %s", target_ticker)
-                    logger.info("sell_market_order %s  target_balance : %d", target_ticker, target_balance)
-                    upbit.sell_market_order(f"{target_ticker}", target_balance * 0.99)
-                    status="standby"
-                    time.sleep(60)
-                    break
-                else:
-                    time.sleep(1)
-                    while_abort_cnt = while_abort_cnt + 1
-                if (while_abort_cnt == 300):
-                    logger.info("It's safe in 5min.")
-                    break
+            logger.info("avg_rate : %0.6f   new_rate_1/avg_rate : %0.6f    new_rate_2/avg_rate : %0.6f", avg_rate, new_rate_1/avg_rate, new_rate_2/avg_rate)
+            logger.info("avg_volume : %d   new_volume_1/avg_volume : %0.3f   new_volume_2/avg_volume : %0.3f", avg_volume, new_volume_1/avg_volume, new_volume_2/avg_volume)
+            rate15_validity = check_rate15_validity(target_ticker)
+            if (rate15_validity == "valid"):
+                logger.info("rate15_validity is valid")
+                str = target_ticker
+                if (str.startswith('KRW-')):
+                    buy_price = pyupbit.get_current_price(f"{target_ticker}")
+                    buy_balance = upbit.get_balance(ticker="KRW")
+                    upbit.buy_market_order(f"{target_ticker}", buy_balance * 0.5)
+                    time.sleep(1800)
+                elif (str.startswith('BTC-')):
+                    buy_price = pyupbit.get_current_price(f"{target_ticker}")
+                    buy_balance = upbit.get_balance(ticker="KRW-BTC")
+                    upbit.buy_market_order(f"{target_ticker}", buy_balance * 0.990)
+                    time.sleep(1800)
+                bought_list[target_ticker] = buy_price
+                status="bought"
+                logger.info("buy : %d  ticker : %s", buy_balance, target_ticker)
+                while_abort_cnt =0
+                time.sleep(3)
+                target_balance = upbit.get_balance(ticker=f"{target_ticker}")
+                while True:
+                    check_price = pyupbit.get_current_price(f"{target_ticker}")
+                    if (buy_price > check_price):
+                        logger.info("buy_price %0.8f > check_price %0.8f", buy_price, check_price)
+                        logger.info("stop_loss %s", target_ticker)
+                        logger.info("sell_market_order %s  target_balance : %d", target_ticker, target_balance)
+                        upbit.sell_market_order(f"{target_ticker}", target_balance * 0.99)
+                        status="standby"
+                        time.sleep(300)
+                        break
+                    else:
+                        time.sleep(1)
+                        while_abort_cnt = while_abort_cnt + 1
+                    if (while_abort_cnt == 300):
+                        logger.info("It's safe in 5min.")
+                        break
+            else:
+                logger.info("rate15_validity is invalid")
     elif (status == "sell_ready"):
         if ticker in bought_list:
             logger.info("bought_list has %s", ticker)
@@ -422,7 +433,7 @@ while True:
                     target_balance = upbit.get_balance(ticker=f"{ticker}")
                     logger.info("sell_market_order %s  target_balance : %d", ticker, target_balance)
                     upbit.sell_market_order(f"{ticker}", target_balance * 0.99)
-                    time.sleep(60)
+                    time.sleep(300)
                     status="standby"
                     break
                 else:
@@ -448,7 +459,7 @@ while True:
                         logger.info("sell_market_order %s  target_balance : %d", ticker, target_balance)
                         upbit.sell_market_order(f"{ticker}", target_balance * 0.99)
                         status="standby"
-                        time.sleep(60)
+                        time.sleep(300)
                         break
                     else:
                         time.sleep(10)
@@ -456,4 +467,3 @@ while True:
         else:
             logger.info("Error1")
 
-            

@@ -1,4 +1,0 @@
-2021-05-21 15:26:55,163 - START!!   init balance : 1315670
-2021-05-21 15:34:04,109 - START!!   init balance : 1315670
-2021-05-21 15:35:33,822 - START!!   init balance : 1315670
-2021-05-21 15:38:01,806 - START!!   init balance : 1315670

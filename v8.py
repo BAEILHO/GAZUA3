@@ -133,9 +133,9 @@ def check_volume_validity(ticker, volume_list):
             abc = 0
         cnt = cnt + 1
     #logger.info("avg_volume : %d   new_volume_1/avg_volume : %0.3f   new_volume_2/avg_volume : %0.3f", avg_volume, new_volume_1/avg_volume, new_volume_2/avg_volume)
-    if (new_volume_1/avg_volume >= 2) and (new_volume_2/avg_volume >= 2.2):
+    if (new_volume_1/avg_volume >= 1.5) and (new_volume_2/avg_volume >= 2):
         return "valid"
-    elif (new_volume_2/avg_volume >= 5) and (ticker_type == "KRW"):
+    elif (new_volume_2/avg_volume >= 3) and (ticker_type == "KRW"):
         return "valid"
     else:
         return "invaild"
@@ -187,6 +187,7 @@ def cal_unit(price):
 
 
 def sell(ticker):
+    logger.info("sell  ticker : %s", ticker)
     sell_order_list = []
     sell_balance_tmp = upbit.get_balance(ticker=f"{ticker}")
     sell_balance = sell_balance_tmp * 0.095
@@ -313,29 +314,6 @@ while_cnt = 0
 
 
 
-#        if (sell_aggresive_enable == 1):
-#            logger.info("sell_aggresive_enable == 1")
-#            ref_price = pyupbit.get_current_price(f"{target_ticker}")
-#            for i in range(1,60):
-#                time.sleep(5)
-#                current_price = pyupbit.get_current_price(f"{target_ticker}")
-#                if (ref_price > current_price):
-#                    logger.info("stop_loss %s", target_ticker)
-#                    del sell_list[target_ticker]
-#                    del bought_list[target_ticker]
-#                    target_balance = upbit.get_balance(ticker=f"{target_ticker}")
-#                    logger.info("sell_market_order %s  target_balance : %d", target_ticker, target_balance)
-#                    upbit.sell_market_order(f"{target_ticker}", target_balance * 0.99)
-#                    sell_aggresive_enable == 0
-#                    status="standby"
-#                    break
-#            sell_aggresive_enable == 0
-#        else:
-
-
-
-
-
 
 
 
@@ -401,14 +379,35 @@ while True:
             bought_list[target_ticker] = buy_price
             status="bought"
             logger.info("buy : %d  ticker : %s", buy_balance, target_ticker)
+            while_abort_cnt =0
+            time.sleep(3)
+            target_balance = upbit.get_balance(ticker=f"{target_ticker}")
+            while True:
+                check_price = pyupbit.get_current_price(f"{target_ticker}")
+                if (buy_price > check_price):
+                    logger.info("buy_price %0.8f > check_price %0.8f", buy_price, check_price)
+                    logger.info("stop_loss %s", target_ticker)
+                    logger.info("sell_market_order %s  target_balance : %d", target_ticker, target_balance)
+                    upbit.sell_market_order(f"{target_ticker}", target_balance * 0.99)
+                    status="standby"
+                    time.sleep(60)
+                    break
+                else:
+                    time.sleep(1)
+                    while_abort_cnt = while_abort_cnt + 1
+                if (while_abort_cnt == 300):
+                    logger.info("It's safe in 5min.")
+                    break
     elif (status == "sell_ready"):
         if ticker in bought_list:
             logger.info("bought_list has %s", ticker)
             ref_price = bought_list[ticker]
             rest_order_cnt = 0
+            rest_order_cnt_past = 0
+            cycle_cnt = 0
             while True:
                 check_price = pyupbit.get_current_price(f"{ticker}")
-                if (ref_price >= check_price):
+                if (ref_price > check_price):
                     logger.info("ref_price %0.8f > check_price %0.8f", ref_price, check_price)
                     logger.info("stop_loss %s", ticker)
                     for order in sell_list[ticker]:
@@ -418,79 +417,42 @@ while True:
                         except:
                             logger.info("already_cancled")
                         time.sleep(1)
-                    time.sleep(10)
                     del sell_list[ticker]
                     del bought_list[ticker]
                     target_balance = upbit.get_balance(ticker=f"{ticker}")
                     logger.info("sell_market_order %s  target_balance : %d", ticker, target_balance)
                     upbit.sell_market_order(f"{ticker}", target_balance * 0.99)
+                    time.sleep(60)
                     status="standby"
                     break
                 else:
-                    rest_order_cnt = 0
-                    time.sleep(10)
+                    check_order_list = upbit.get_order(ticker)
+                    rest_order_cnt = len(check_order_list)
+                    if (rest_order_cnt == rest_order_cnt_past):
+                        cycle_cnt = cycle_cnt + 1
+                    else:
+                        cycle_cnt = 0
+                    if (cycle_cnt == 30):
+                        logger.info("%s is quiet. sell now", ticker)
+                        for order in sell_list[ticker]:
+                            try:
+                                logger.info("cancel_order")
+                                upbit.cancel_order(order)
+                            except:
+                                logger.info("already_cancled")
+                            time.sleep(1)
+                        time.sleep(10)
+                        del sell_list[ticker]
+                        del bought_list[ticker]
+                        target_balance = upbit.get_balance(ticker=f"{ticker}")
+                        logger.info("sell_market_order %s  target_balance : %d", ticker, target_balance)
+                        upbit.sell_market_order(f"{ticker}", target_balance * 0.99)
+                        status="standby"
+                        time.sleep(60)
+                        break
+                    else:
+                        time.sleep(10)
+                        rest_order_cnt_past = rest_order_cnt
         else:
             logger.info("Error1")
 
-            #else:
-            #    target_ticker = 0
-            #    logger.info("rate15_validity is invalid. target_ticker will be reset")
-    #if (status=="bought"):
-    #    logger.info("status==bought  time sleep 1")
-    #    time.sleep(1)
-    #else:
-    #    logger.info("status==bought else time sleep 1")
-    #    time.sleep(1)
-    #if (while_cnt == 100):
-    #    upbit.buy_market_order("KRW-BTC", 10000)
-    #    time.sleep(10)
-    #    btc_price = pyupbit.get_current_price("KRW-BTC")
-    #    btc_balance = 10000/btc_price
-    #    upbit.sell_market_order("KRW-BTC", btc_balance * 0.99)
-    #    time.sleep(10)
-    #    while_cnt = 0
-    #else:
-    #    while_cnt = while_cnt + 1
-
-        
-
-    
-    
-    
-
-    #     if (open_value >= close_value):
-    #         value = open_value - close_value
-    #     else:
-    #         value = close_value - open_value
-    #     sum = sum + value
-    # avg = sum / len(list_from_open)
-    # return avg
-
-
-
-# while True:
-#     print(df)
-#     if length_cnt < 10:
-#         list_length.append(length)
-#         avg_length = avg_cal(list_length)
-#         #print("list_length", list_length, "avg_length", avg_length)
-#         length_cnt = length_cnt + 1
-#         #print(f"{c_time}  length_cnt :", length_cnt)
-#         print("length_cnt : %d", length_cnt)
-#         continue
-#     else:
-#         shift(list_length,length)
-#         avg_length = avg_cal(list_length)
-#         #print("list_length", list_length, "avg_length", avg_length)   
-#     time.sleep(30)
-    
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            

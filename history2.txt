@@ -1,0 +1,1000 @@
+  609  ls
+  610  cd GAZUA/
+  611  lws
+  612  ls
+  613  ls -rtl
+  614  vi v7*
+  615  vi -d v7.py v7_KRW1.py 
+  616  vi -d v7.py v7_KRW2.py 
+  617  vi -d v7.py v7_BTC.py 
+  618  ls
+  619  cd log
+  620  ls
+  621  ls -rtl
+  622  vi v7_KRW1.txt 
+  623  cd ..
+  624  vi v7*
+  625  vi -d v7.py v7_KRW1.py 
+  626  vi -d v7.py v7_KRW2.py 
+  627  vi -d v7.py v7_BTC.py 
+  628  vi v7.py 
+  629  vi v7*
+  630  ls
+  631  ls -rtl
+  632  cd log
+  633  vi v7.
+  634  ls
+  635  vi v7_KRW1.txt 
+  636  vi v7_KRW*
+  637  ls
+  638  cd ..
+  639  ls
+  640  ./:run_split
+  641  ls
+  642  cd log
+  643  ls
+  644  ls -rtl
+  645  cd ..
+  646  ls -rtl
+  647  vi nohup_KRW1.out 
+  648  vi v7*
+  649  cp v7.py v8.py
+  650  vi v8.py 
+  651  vi test9.py 
+  652  cp v8.py test11.py
+  653  vi test11.py 
+  654  vi v8.py 
+  655  vi -d v7.py v7_KRW1.py 
+  656  vi -d v7.py v7_KRW2.py 
+  657  vi v8.py 
+  658  vi -d v7.py v7_BTC.py 
+  659  vi v8.py 
+  660  ls -rtl
+  661  cp v8.py v8_KRW1.py
+  662  cp v8.py v8_KRW2.py
+  663  cp v8.py v8_BTC.py
+  664  vi v8*
+  665  ls
+  666  vi :run_split
+  667  ls
+  668  ./:run_split
+  669  ls
+  670  ls -rtl
+  671  vi nohup_KRW1.out 
+  672  vi v8*
+  673  ls
+  674  ls -rtl
+  675  ./:run_split
+  676  ls -rtl
+  677  cd log
+  678  ls -rtl
+  679  rm v7* -rf
+  680  ls
+  681  ls -rtl
+  682  cd ..
+  683  ls -rtl
+  684  vi nohup_KRW1.out 
+  685  ls
+  686  ps ax | grep .py
+  687  kill 99417
+  688  kill 99418
+  689  kill 99419
+  690  ./:run_split
+  691  l
+  692  ls -rtl
+  693  vi nohup_KRW1.out 
+  694  ls
+  695  cd GAZUA/
+  696  ls
+  697  ls -rtl
+  698  vi nohup_*
+  699  vi v8*
+  700  ls -rtl
+  701  vi v8.py 
+  702  ls
+  703  cd GAZUA/
+  704  ls -rtl
+  705  vi nohup_*
+  706  vi v8*
+  707  vi nohup_*
+  708  cd GAZUA/
+  709  ls
+  710  vi v8*
+  711  cd log
+  712  ls -rtl
+  713  vi v*
+  714  ls
+  715  cd GAZUA/
+  716  ls
+  717  vi v8*
+  718  vi nohup_*
+  719  vi v8.py 
+  720  cd GAZUA/
+  721  ls
+  722  ls -rtl
+  723  vi nohup_*
+  724  cd GAZUA/
+  725  ls
+  726  ls -rtl
+  727  cd log
+  728  ls -rtl
+  729  vi *
+  730  ls
+  731  cd ..
+  732  ls
+  733  vi v8.py 
+  734  ls -rtl
+  735  vi test11.py 
+  736  python3 test11.py 
+  737  vi test11.py 
+  738  python3 test11.py 
+  739  vi test11.py 
+  740  python3 test11.py 
+  741  vi test11.py 
+  742  vi v8.py 
+  743  vi test11.py 
+  744  python3 test11.py 
+  745  vi test11.py 
+  746  vi v8.py 
+  747  vi test11.py 
+  748  python3 test11.py 
+  749  vi v8.py 
+  750  vi -d v8.py v8_KRW1.py 
+  751  vi -d v8.py v8_KRW2.py 
+  752  vi -d v8.py v8_BTC.py 
+  753  ls -rtl
+  754  ./:run_split
+  755  ls -rtl
+  756  vi nohup_*
+  757  ls -rtl
+  758  vi nohup_*
+  759  cd GAZUA/
+  760  ls
+  761  ls -rtl
+  762  vi nohup_*
+  763  vi v8*
+  764  ls
+  765  cd GAZUA/
+  766  ls
+  767  vi v8*
+  768  ls
+  769  cd log/
+  770  ls
+  771  vi *
+  772  cd ..
+  773  vi v8*
+  774  cd log
+  775  vi *
+  776  cd GAZUA/
+  777  cd log
+  778  vi v8*
+  779  cd GAZUA/
+  780  vi v8*
+  781  cd log
+  782  vi v8*
+  783  cd ..
+  784  vi v8*
+  785  cd log
+  786  vi v8*
+  787  cd ..
+  788  vi v8*
+  789  ./:run_split
+  790  ]
+  791  vi v8*
+  792  ls
+  793  cd log
+  794  vi v8*
+  795  cd ..
+  796  vi v8*
+  797  vi -d v8.py v8_KRW1.py 
+  798  vi -d v8.py v8_KRW2.py 
+  799  vi -d v8.py v8_BTC.py 
+  800  ls
+  801  ./:run_split
+  802  ls -rtl
+  803  vi nohup_*
+  804  vi v8*
+  805  vi nohup_*
+  806  vi v8*
+  807  ls -rtl
+  808  rm -rf v8_BTC.bak.py 
+  809  rm -rf v8_KRW1.bak.py 
+  810  rm -rf v8_KRW2.bak.py 
+  811  vi v8*
+  812  ls -rtl
+  813  vi nohup_*
+  814  vi v8*
+  815  ls
+  816  vi v8*
+  817  vi nohup_*
+  818  cd GAZUA/
+  819  ls
+  820  ls -rtl
+  821  vi nohup_*
+  822  vi v8*
+  823  vi nohup_*
+  824  ls -rtl
+  825  vi nohup_*
+  826  ls -rtl
+  827  vi nohup_*
+  828  ls -rtl
+  829  ./:run_split
+  830  vi v8*
+  831  ls
+  832  cd GAZUA/
+  833  ls
+  834  ls -rtl
+  835  vi nohup_*
+  836  ls
+  837  cd GAZUA/
+  838  vi v9*
+  839  ls
+  840  vi nohup_*
+  841  ls
+  842  vi v9*
+  843  ls
+  844  cd GAZUA/
+  845  ls
+  846  ls -rtl
+  847  vi nohup_*
+  848  cd GAZUA/
+  849  vi nohup_*
+  850  ls
+  851  vi v9*
+  852  vi -d v9_BTC1.py v9_BTC2.py 
+  853  vi -d v9_BTC1.py v9_KRW1.py 
+  854  vi -d v9_KRW1.py v9_KRW2.py 
+  855  ./:run_split_v9
+  856  ls -rtl
+  857  vi nohup_*
+  858  ls -rtl
+  859  vi nohup_*
+  860  vi v9*
+  861  vi nohup_*
+  862  vi v9*
+  863  ls -rtl
+  864  ./:run_split_v9
+  865  cd GAZUA/
+  866  ls -rtl
+  867  vi nohup_*
+  868  cd GAZUA/
+  869  ls -rtl
+  870  vi v5_aggresive.py 
+  871  cp v5_aggresive.py v10.py
+  872  vi v10.py 
+  873  pip install ccxt
+  874  vi v10.py 
+  875  python3 test10.py 
+  876  python3 v10.py 
+  877  vi vi10
+  878  vi v10.py 
+  879  python3 v10.py 
+  880  vi v10.py 
+  881  python3 v10.py 
+  882  vi v10.py 
+  883  vi /etc/ssh/sshd_config
+  884  sudo root
+  885  sudo su
+  886  cd GAZUA/
+  887  vi v10.py 
+  888  python3 v10.py 
+  889  vi v10.py 
+  890  python3 v10.py 
+  891  vi v10.py 
+  892  python3 v10.py 
+  893  vi v10.py 
+  894  python3 v10.py 
+  895  vi v10.py 
+  896  python3 v10.py 
+  897  vi v10.py 
+  898  python3 v10.py 
+  899  ls
+  900  python3 v10.py 
+  901  vi v10.py 
+  902  python3 v10.py 
+  903  vi v10.py 
+  904  python3 v10.py 
+  905  vi v10.py 
+  906  python3 v10.py 
+  907  vi v10.py 
+  908  python3 v10.py 
+  909  vi v10.py 
+  910  python3 v10.py 
+  911  cd GAZUA/
+  912  vi v10.py 
+  913  python3 v10.py 
+  914  vi v10.py 
+  915  python3 v10.py 
+  916  vi v10.py 
+  917  python3 v10.py 
+  918  vi v10.py 
+  919  python3 v10.py 
+  920  vi v10.py 
+  921  python3 v10.py 
+  922  vi v10.py 
+  923  python3 v10.py 
+  924  vi v10.py 
+  925  python3 v10.py 
+  926  vi v10.py 
+  927  python3 v10.py 
+  928  vi v10.py 
+  929  vi v9_KRW1.py 
+  930  vi v10.py 
+  931  vi v9_KRW1.py 
+  932  vi v10.py 
+  933  ps ax | grep .py
+  934  kill 125103
+  935  kill 125104
+  936  kill 125105
+  937  ps ax | grep .py
+  938  python3 v10.py 
+  939  ls
+  940  ls -rtl
+  941  rm -rf aggresive_2021_05_2*
+  942  ls -rtl
+  943  cp :run_split_v9 :run_v10
+  944  vi :run_v10
+  945  ls -rtl
+  946  cd log/
+  947  ls -rtl
+  948  vi v10.txt 
+  949  ls
+  950  cd ..
+  951  ls
+  952  ./:run_v10
+  953  ls -rtl
+  954  vi v10
+  955  cd GAZUA/
+  956  vi v10.py 
+  957  ls -rtl
+  958  grep length *
+  959  vi v5_aggresive.py 
+  960  grep avg_cal *
+  961  vi v5_aggresive.py 
+  962  vi v10.py 
+  963  cp v10.py test13.py
+  964  vi test13.py 
+  965  python3 close_li
+  966  python3 test13.py 
+  967  vi test13.py 
+  968  python3 test13.py 
+  969  vi test13.py 
+  970  python3 test13.py 
+  971  vi v10.py 
+  972  vi test13.py 
+  973  vi v10.py 
+  974  python3 test13.py 
+  975  vi v10.py 
+  976  cd GAZUA/
+  977  vi test13.py 
+  978  python3 test13.py 
+  979  vi test13.py 
+  980  vi v10.py 
+  981  vi test13.py 
+  982  python3 test13.py 
+  983  vi v10.py 
+  984  ls -rtl
+  985  vi nohup_v10.out 
+  986  vi v10.py 
+  987  vi nohup_v10.out 
+  988  vi v10.py 
+  989  ./:run_v10
+  990  ls -rtl
+  991  vi nohup_v10.out 
+  992  vi v10.py 
+  993  vi nohup_v10.out 
+  994  vi v10.py 
+  995  ./:run_v10
+  996  ls rtl
+  997  ls -rtl
+  998  vi nohup_v10.out 
+  999  ls -rtl
+ 1000  vi v10.py 
+ 1001  ./:run_v10
+ 1002  ls -rtk
+ 1003  ls -rtl
+ 1004  vi nohup_v10.out 
+ 1005  ls -rtl
+ 1006  ./:run_v10
+ 1007  ls -rtl
+ 1008  vi nohup_10
+ 1009  vi nohup_v10.out 
+ 1010  ls -rtl
+ 1011  vi v10.py 
+ 1012  ls -rtl
+ 1013  vi nohup_v10.out 
+ 1014  vi v10.py 
+ 1015  vi nohup_v10.out 
+ 1016  vi v10.py 
+ 1017  vi nohup_v10.out 
+ 1018  ps ax | grep .py
+ 1019  kill 137341
+ 1020  kill 137391
+ 1021  kill 137420
+ 1022  ps ax | grep .py
+ 1023  vi :run_v10
+ 1024  ./:run_v10
+ 1025  ls -rtl
+ 1026  cd GAZUA/
+ 1027  ls
+ 1028  ls -rtl
+ 1029  rm nohup_BTC* -rf
+ 1030  rm nohup_KRW* -rf
+ 1031  ls -rtl
+ 1032  vi nohup_v10.out 
+ 1033  vi v10.py 
+ 1034  ./:run_v10
+ 1035  ls -rtl
+ 1036  vi nohup_v10.out 
+ 1037  vi v10.py 
+ 1038  ./:run_v10
+ 1039  ls -rtl
+ 1040  vi nohup_v10.out 
+ 1041  cd GAZUA/
+ 1042  ls -rtl
+ 1043  vi nohup_v10.out 
+ 1044  ls
+ 1045  ls -rtl
+ 1046  cd log
+ 1047  ls -rtl
+ 1048  vi v10.txt 
+ 1049  cd ..
+ 1050  vi v10.py 
+ 1051  ls
+ 1052  vi nohup_v10.out 
+ 1053  ls
+ 1054  vi v10.py 
+ 1055  vi test13.py 
+ 1056  python3 test13.py 
+ 1057  vi v10.py 
+ 1058  vi test13.py 
+ 1059  python3 test13.py 
+ 1060  vi test13.py 
+ 1061  vi v10.py 
+ 1062  vi nohup_v10.out 
+ 1063  vi v10.py 
+ 1064  ./:run_v10
+ 1065  ps ax | grep .py
+ 1066  ls -rtl
+ 1067  vi nohup_v10.out 
+ 1068  ls -rtl
+ 1069  vi nohup_v10.out 
+ 1070  vi log/v10.txt 
+ 1071  vi v10.py 
+ 1072  ls
+ 1073  cd GAZUA/
+ 1074  ls -rtl
+ 1075  vi nohup_v10.out 
+ 1076  ls
+ 1077  vi v9_*
+ 1078  ls -rtl
+ 1079  vi :run_split
+ 1080  ./:run_split_v9
+ 1081  ls
+ 1082  ls -rtl
+ 1083  vi nohup_KRW1.out 
+ 1084  cd GAZUA/
+ 1085  vi v9_KRW*
+ 1086  ls
+ 1087  ./:run_split_v9
+ 1088  cd GAZUA/
+ 1089  ls
+ 1090  vi v9_*
+ 1091  ./:run_split_v9
+ 1092  cd GAZUA/
+ 1093  ls
+ 1094  ls -rtl
+ 1095  vi nohup_
+ 1096  vi nohup_*
+ 1097  ls -rtl
+ 1098  vi nohup_*
+ 1099  ps ax | grep .py
+ 1100  ls -rtl
+ 1101  ./:run_v10
+ 1102  ls -rtl
+ 1103  vi nohup_v10.out 
+ 1104  cd GA
+ 1105  ls -rtl
+ 1106  vi nohup_v10.out 
+ 1107  vi v10.py 
+ 1108  ./:run_v10
+ 1109  ls -rtl
+ 1110  vi nohup_v10.out 
+ 1111  cd GA
+ 1112  ls
+ 1113  ls -rtl
+ 1114  vi nohup_v10.out 
+ 1115  cp nohup_v10.out aaa.txt
+ 1116  ./:run_v10
+ 1117  vi aaa
+ 1118  vi aaa.txt 
+ 1119  ls -rtl
+ 1120  vi nohup_v10.out 
+ 1121  vi aaa.txt 
+ 1122  ls -rtl
+ 1123  vi nohup_v10.out 
+ 1124  ls -rtl
+ 1125  vi nohup_v10.out 
+ 1126  cd GAZUA/
+ 1127  ls -rtl
+ 1128  vi nohup_v10.out 
+ 1129  cd GAZUA/
+ 1130  vi nohup_v10.out 
+ 1131  cd GAZUA/
+ 1132  ls -rtl
+ 1133  vi nohup_v10.out 
+ 1134  cd GAZUA/
+ 1135  cp v10.py v11.py
+ 1136  vi v11.py 
+ 1137  python3 v11.py 
+ 1138  vi v11.py 
+ 1139  python3 v11.py 
+ 1140  vi v11.py 
+ 1141  python3 v11.py 
+ 1142  vi v11.py 
+ 1143  python3 v11.py 
+ 1144  vi v11.py 
+ 1145  python3 v11.py 
+ 1146  vi v11.py 
+ 1147  python3 v11.py 
+ 1148  ls -rtl
+ 1149  cp v9_KRW1.py v12_KRW1.py
+ 1150  vi v12_KRW1.py 
+ 1151  ls
+ 1152  cd log
+ 1153  ls -rtl
+ 1154  vi v9_KRW*
+ 1155  cd ..
+ 1156  vi v12_KRW1.py 
+ 1157  python3 v12_KRW1.py 
+ 1158  vi v12_KRW1.py 
+ 1159  python3 v12_KRW1.py 
+ 1160  ps ax | grep .py
+ 1161  kill 155490
+ 1162  vi -d v9_KRW1.py v9_KRW2.py 
+ 1163  cp v12_KRW1.py v12_KRW2.py 
+ 1164  vi v12_KRW2.py 
+ 1165  cp :run_split_v9 :run_split_v12_krw
+ 1166  vi :run_split_v12_krw
+ 1167  ./:run_split_v12_krw
+ 1168  ls -rtl
+ 1169  vi nohup_KRW1.out 
+ 1170  ls -rtl
+ 1171  vi nohup_KRW1.out 
+ 1172  vi v12_KRW*
+ 1173  ./:run_split_v12_krw
+ 1174  vi v12_KRW*
+ 1175  ./:run_split_v12_krw
+ 1176  cd GAZUA/
+ 1177  ls -rtl
+ 1178  vi nohup_KRW1.out 
+ 1179  vi v12_KRW*
+ 1180  vi nohup_KRW*
+ 1181  vi v12_KRW*
+ 1182  vi nohup_KRW*
+ 1183  vi v12_KRW*
+ 1184  ls -rtl
+ 1185  cp v12_KRW1.py v12_KRW2.py 
+ 1186  vi v12_KRW2.py 
+ 1187  ls -rtl
+ 1188  mv :run_split_v12_krw :run_v12
+ 1189  ./:run_v12
+ 1190  ls -rtl
+ 1191  vi nohup_*
+ 1192  ls -rtl
+ 1193  vi nohup_KRW1.out 
+ 1194  cd GAZUA/
+ 1195  ls -rtl
+ 1196  vi nohup_KRW1.out 
+ 1197  ps ax | grep .py
+ 1198  kill 162838
+ 1199  kill 162839
+ 1200  ls -rtl
+ 1201  vi nohup_KRW2.out 
+ 1202  ls -rtl
+ 1203  vi nohup_KRW1.out 
+ 1204  ls -rtl
+ 1205  vi v12_KRW
+ 1206  vi v12_KRW1.py 
+ 1207  vi nohup_KRW1.out 
+ 1208  vi v12_KRW1.py 
+ 1209  cp v12_KRW1.py v12_KRW2.py 
+ 1210  vi v12_KRW2.py 
+ 1211  ./:run_v12
+ 1212  ls -rtl
+ 1213  vi nohup_KRW1.out 
+ 1214  ls -rtl
+ 1215  vi nohup_KRW1.out 
+ 1216  ls -rtl
+ 1217  vi nohup_KRW1.out 
+ 1218  vi v12_KRW1.py 
+ 1219  vi nohup_KRW1.out 
+ 1220  vi v12_KRW1.py 
+ 1221  ls -rtl
+ 1222  vi nohup_1
+ 1223  vi nohup_KRW1.out 
+ 1224  ls -rtl
+ 1225  ./:run_split_v9
+ 1226  ps ax | grep .py
+ 1227  kill 163851
+ 1228  kill 163852
+ 1229  ps ax | grep .py
+ 1230  ls -rtl
+ 1231  vi nohup_KRW2.out 
+ 1232  ls -rtl
+ 1233  vi nohup_KRW1.out 
+ 1234  vi nohup_KRW2.out 
+ 1235  ls -rtl
+ 1236  vi nohup_KRW*
+ 1237  ls -rtl
+ 1238  vi nohup_v10.out 
+ 1239  ls -rtl
+ 1240  vi v12_KRW*
+ 1241  ls -rtl
+ 1242  vi nohup_*
+ 1243  cd GAZUA/
+ 1244  ls -rtl
+ 1245  vi nohup_*
+ 1246  vi v9*
+ 1247  ls -rtl
+ 1248  ps ax | grep .py
+ 1249  kill 163974
+ 1250  kill 163975
+ 1251  kill 163976
+ 1252  kill 163977
+ 1253  kill 163977./:run_split_v9
+ 1254  ./:run_split_v9
+ 1255  ls
+ 1256  ls -rtl
+ 1257  vi nohup_*
+ 1258  cd GAZUA/
+ 1259  ls -rtl
+ 1260  vi nohup_*
+ 1261  vi v12_KRW
+ 1262  vi v12_KRW*
+ 1263  vi nohup_*
+ 1264  ./:run_v12
+ 1265  ls -rtl
+ 1266  vi nohup_*
+ 1267  vi v12_KRW*
+ 1268  ./:run_v12
+ 1269  ls -rtl
+ 1270  vi nohup_*
+ 1271  ls -rtl
+ 1272  vi nohup_*
+ 1273  ls -rtl
+ 1274  vi nohup_*
+ 1275  cp v12_KRW1.py v12_KRW2.py 
+ 1276  vi v12_KRW2.py 
+ 1277  ./:run_v12
+ 1278  ls -rtl
+ 1279  vi nohup_*
+ 1280  ls -rtl
+ 1281  cd log
+ 1282  ls -rtl
+ 1283  cd ..
+ 1284  ls -rtl
+ 1285  vi v12_KRW*
+ 1286  ls -rtl
+ 1287  vi nohup_*
+ 1288  vi v12_KRW*
+ 1289  ls -rtl
+ 1290  vi nohup_*
+ 1291  ls -rtl
+ 1292  vi nohup_*
+ 1293  ls -rtl
+ 1294  vi nohup_*
+ 1295  ls -rtl
+ 1296  vi nohup_*
+ 1297  ls -rtl
+ 1298  vi nohup_*
+ 1299  ls -rtl
+ 1300  vi nohup_*
+ 1301  vi v12_KRW*
+ 1302  vi nohup_*
+ 1303  vi v12_KRW*
+ 1304  grep SUM *
+ 1305  grep sum *
+ 1306  vi v12_KRW*
+ 1307  ls -rtl
+ 1308  vi nohup_*
+ 1309  ls -rtl
+ 1310  vi v12_KRW*
+ 1311  ./:run_v12
+ 1312  ls -rtl
+ 1313  vi nohup_*
+ 1314  vi v12_KRW1.py 
+ 1315  ./:run_v12
+ 1316  vi test_time.py
+ 1317  python3 test_time.py 
+ 1318  vi test_time.py 
+ 1319  python3 test_time.py 
+ 1320  vi test_time.py 
+ 1321  python3 test_time.py 
+ 1322  vi test_time.py 
+ 1323  cp v12_KRW1.py test15.py
+ 1324  vi test15.py 
+ 1325  python3 test15.py 
+ 1326  vi test15.py 
+ 1327  python3 test15.py 
+ 1328  vi test15.py 
+ 1329  python3 test15.py 
+ 1330  vi test15.py 
+ 1331  python3 test15.py 
+ 1332  vi test15.py 
+ 1333  python3 test15.py 
+ 1334  vi test15.py 
+ 1335  python3 test15.py 
+ 1336  vi test15.py 
+ 1337  python3 test15.py 
+ 1338  vi test15.py 
+ 1339  python3 test15.py 
+ 1340  vi test15.py 
+ 1341  python3 test15.py 
+ 1342  vi test15.py 
+ 1343  python3 test15.py 
+ 1344  vi test15.py 
+ 1345  python3 test15.py 
+ 1346  vi test15.py 
+ 1347  python3 test15.py 
+ 1348  vi test15.py 
+ 1349  python3 test15.py 
+ 1350  vi test15.py 
+ 1351  python3 test15.py 
+ 1352  vi test15.py 
+ 1353  python3 test15.py 
+ 1354  vi test15.py 
+ 1355  python3 test15.py 
+ 1356  vi test15.py 
+ 1357  python3 test15.py 
+ 1358  vi test15.py 
+ 1359  python3 test15.py 
+ 1360  vi test15.py 
+ 1361  python3 test15.py 
+ 1362  vi test15.py 
+ 1363  python3 test15.py 
+ 1364  vi test15.py 
+ 1365  vi v12_KRW*
+ 1366  vi test15.py 
+ 1367  cp v12_KRW1.py test16.py
+ 1368  vi test16.py 
+ 1369  python3 test16.py 
+ 1370  vi test16.py 
+ 1371  python3 test16.py 
+ 1372  vi test16.py 
+ 1373  python3 test16.py 
+ 1374  vi test16.py 
+ 1375  python3 test16.py 
+ 1376  vi test16.py 
+ 1377  python3 test16.py 
+ 1378  vi test16.py 
+ 1379  python3 test16.py 
+ 1380  vi test16.py 
+ 1381  python3 test16.py 
+ 1382  vi test16.py 
+ 1383  python3 test16.py 
+ 1384  vi test16.py 
+ 1385  python3 test16.py 
+ 1386  vi test16.py 
+ 1387  python3 test16.py 
+ 1388  vi test16.py 
+ 1389  python3 test16.py 
+ 1390  vi test16.py 
+ 1391  ls -rtl
+ 1392  ps ax | grep .py
+ 1393  vi nohup_*
+ 1394  cd GAZUA/
+ 1395  ls -rtl
+ 1396  vi nohup_*
+ 1397  vi v12_KRW*
+ 1398  ls -rtl
+ 1399  vi test16.py 
+ 1400  python3 test16.py 
+ 1401  vi test16.py 
+ 1402  python3 test16.py 
+ 1403  vi test16.py 
+ 1404  python3 test16.py 
+ 1405  vi test16.py 
+ 1406  python3 test16.py 
+ 1407  vi test16.py 
+ 1408  python3 test16.py 
+ 1409  vi test16.py 
+ 1410  python3 test16.py 
+ 1411  vi test16.py 
+ 1412  python3 test16.py 
+ 1413  vi test16.py 
+ 1414  python3 test16.py 
+ 1415  vi test16.py 
+ 1416  python3 test16.py 
+ 1417  vi test16.py 
+ 1418  python3 test16.py 
+ 1419  vi test16.py 
+ 1420  vi v12_KRW*
+ 1421  vi test16.py 
+ 1422  python3 test16.py 
+ 1423  vi test16.py 
+ 1424  cd GAZUA/
+ 1425  vi test16.py 
+ 1426  python3 test16.py 
+ 1427  vi test16.py 
+ 1428  python3 test16.py 
+ 1429  vi test16.py 
+ 1430  python3 test16.py 
+ 1431  vi test16.py 
+ 1432  python3 test16.py 
+ 1433  vi test16.py 
+ 1434  python3 test16.py 
+ 1435  vi test16.py 
+ 1436  python3 test16.py 
+ 1437  vi test16.py 
+ 1438  python3 test16.py 
+ 1439  vi test16.py 
+ 1440  python3 test16.py 
+ 1441  vi test16.py 
+ 1442  python3 test16.py 
+ 1443  vi test16.py 
+ 1444  python3 test16.py 
+ 1445  vi test16.py 
+ 1446  python3 test16.py 
+ 1447  vi test16.py 
+ 1448  python3 test16.py 
+ 1449  vi test16.py 
+ 1450  vi v12_KRW*
+ 1451  vi test16.py 
+ 1452  python3 test16.py 
+ 1453  vi v12_KRW*
+ 1454  vi test16.py 
+ 1455  python3 test16.py 
+ 1456  vi test16.py 
+ 1457  vi v12_KRW*
+ 1458  vi v12_KRW1.py 
+ 1459  cp v12_KRW1.py v12_KRW2.py 
+ 1460  vi v12_KRW2.py 
+ 1461  ./:run_v12
+ 1462  ls -rtl
+ 1463  vi nohup_*
+ 1464  ls -rtl
+ 1465  vi v12_KRW*
+ 1466  vi nohup_*
+ 1467  vi v12_KRW*
+ 1468  cp v12_KRW1.py v12_KRW2.py 
+ 1469  vi v12_KRW2.py 
+ 1470  vi nohup_*
+ 1471  ./:run_v12
+ 1472  ls -rtl
+ 1473  ls
+ 1474  ls -rtl
+ 1475  vi nohup_*
+ 1476  vi v12_KRW*
+ 1477  vi v12_KRW2.py 
+ 1478  ./:run_v12
+ 1479  ls -rtl
+ 1480  vi nohup_*
+ 1481  cd GAZUA/
+ 1482  ls -rtl
+ 1483  vi v12_KRW*
+ 1484  cp v12_KRW1.py v12_KRW2.py 
+ 1485  vi v12_KRW2.py 
+ 1486  ./:run_v12
+ 1487  ls -rtl
+ 1488  vi nohup_*
+ 1489  cd GAZUA/
+ 1490  ls -rtl
+ 1491  vi nohup_
+ 1492  ls -rtl
+ 1493  *
+ 1494  vi nohup_*
+ 1495  vi v12_KRW*
+ 1496  vi nohup_*
+ 1497  cp v12_KRW1.py v12_KRW2.py 
+ 1498  vi v12_KRW2.py 
+ 1499  ./:run_v12
+ 1500  ls -rtl
+ 1501  vi nohup_*
+ 1502  cd GAZUA/
+ 1503  ls -rtl
+ 1504  vi nohup_*
+ 1505  vi v12_KRW*
+ 1506  vi nohup_*
+ 1507  vi v12_KRW*
+ 1508  ls -rtl
+ 1509  vi v12_KRW*
+ 1510  vi nohup_*
+ 1511  vi v12_KRW*
+ 1512  ls -rtl
+ 1513  vi test16.py 
+ 1514  cp v12_KRW1.py v12_KRW2.py 
+ 1515  vi v12_KRW2.py 
+ 1516  ./:run_v12
+ 1517  ls -rtl
+ 1518  vi nohup_*
+ 1519  ls -rtl
+ 1520  cd log
+ 1521  ls -rtl
+ 1522  vi v10.txt 
+ 1523  ls -rtl
+ 1524  cd ..
+ 1525  vi nohup_*
+ 1526  cd log
+ 1527  ls -rtl
+ 1528  vi v10.txt 
+ 1529  cd GAZUA/
+ 1530  ls -rtl
+ 1531  vi nohup_*
+ 1532  vi v12_KRW*
+ 1533  vi nohup_*
+ 1534  vi v12_KRW*
+ 1535  vi nohup_*
+ 1536  ls -rtl
+ 1537  vi nohup_*
+ 1538  ./:run_v12
+ 1539  cd GAZUA/
+ 1540  ls -rtl
+ 1541  vi nohup_*
+ 1542  ls -rtl
+ 1543  vi v12_KRW*
+ 1544  vi nohup_*
+ 1545  vi v12_KRW*
+ 1546  vi nohup_*
+ 1547  vi v12_KRW*
+ 1548  vi test16.py 
+ 1549  python3 test16.py 
+ 1550  vi test16.py 
+ 1551  python3 test16.py 
+ 1552  vi test16.py 
+ 1553  python3 test16.py 
+ 1554  vi test16.py 
+ 1555  python3 test16.py 
+ 1556  vi test16.py 
+ 1557  python3 test16.py 
+ 1558  vi test16.py 
+ 1559  python3 test16.py 
+ 1560  vi test16.py 
+ 1561  python3 test16.py 
+ 1562  vi test16.py 
+ 1563  python3 test16.py 
+ 1564  cd log
+ 1565  ls -rtl
+ 1566  cd ..
+ 1567  vi test16.py 
+ 1568  vi v12_KRW*
+ 1569  vi test16.py 
+ 1570  vi v12_KRW*
+ 1571  cp v12_KRW1.py v12_KRW2.py 
+ 1572  vi v12_KRW2.py 
+ 1573  vi :run_v12
+ 1574  ./:run_v12
+ 1575  ls -rtl
+ 1576  vi nohup_*
+ 1577  cd GAZUA/
+ 1578  ls -rtl
+ 1579  vi nohup_*
+ 1580  vi v12_KRW*
+ 1581  ls
+ 1582  cd log
+ 1583  ls -rtl
+ 1584  rm * -rf
+ 1585  cd ..
+ 1586  ls
+ 1587  cp v12_KRW1.py v12.bak.py
+ 1588  ./:run_v12
+ 1589  cd
+ 1590  cd GAZUA/
+ 1591  vi nohup_*
+ 1592  cd GAZUA/
+ 1593  ls -rtl
+ 1594  vi nohup_*
+ 1595  cd GAZUA/
+ 1596  ls -rtl
+ 1597  vi nohup_*
+ 1598  ls -rtl
+ 1599  ls
+ 1600  vi :env
+ 1601  ls
+ 1602  ps ax | grep .py
+ 1603  kill 195469
+ 1604  kill 195470
+ 1605  vi readme 
+ 1606  ls
+ 1607  vi history 
+ 1608  history > history2.txt 
