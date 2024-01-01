@@ -1,0 +1,4 @@
+,,code,name,first_buy_price,first_order,first_order_completed,first_date,check_volume,last_order,last_price,betting_seed,last_date,waiting_period,sell_completed,sell,stop_loss,auto_sell,auto_loss,sell_price,stop_loss_price,sell_date,profit,income,balance,total_balance,order_cnt,max_order,over_cnt
+하루1회,1.종목검색,5930,삼성전자,선발매수가,0,0,오늘날짜,오늘거래량,,,,,,,,,,,,,,,,,,,,
+하루1회,2.검색된종목 선발주문,,,,1,0,,,,,,,,,,,,,,,,,,,,,,
+,3.선발주문 체결확인,,,,,,,,1,체결평균가,배팅금액,매수일자,,,,,,,,,,,,,,,,1
